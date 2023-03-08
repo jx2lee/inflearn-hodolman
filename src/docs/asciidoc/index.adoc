@@ -1,0 +1,40 @@
+= 재주닝 API
+:doctype: book
+:toc: left
+:front-cover-image: cover.png[,1050,1600]
+:source-highlighter: highlight.js
+:sectlinks:
+
+== 게시글 단건 조회 API
+
+=== 요청
+
+include::{snippets}/post-inquery/http-request.adoc[]
+
+include::{snippets}/post-inquery/path-parameters.adoc[]
+
+=== 응답
+
+include::{snippets}/post-inquery/http-response.adoc[]
+
+include::{snippets}/post-inquery/response-fields.adoc[]
+
+=== CURL
+
+include::{snippets}/post-inquery/curl-request.adoc[]
+
+== 게시글 저장 API
+
+=== 요청
+
+include::{snippets}/post-create/http-request.adoc[]
+
+include::{snippets}/post-create/request-fields.adoc[]
+
+=== 응답
+
+include::{snippets}/post-create/http-response.adoc[]
+
+=== CURL
+
+include::{snippets}/post-create/curl-request.adoc[]
