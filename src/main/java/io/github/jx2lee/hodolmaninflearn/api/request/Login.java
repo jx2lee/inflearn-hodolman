@@ -1,5 +1,6 @@
 package io.github.jx2lee.hodolmaninflearn.api.request;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,4 +15,11 @@ public class Login {
     private String email;
     @NotBlank(message = "패스워드를 입력해주세요.")
     private String password;
+
+    @Builder
+
+    public Login(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
 }
